@@ -1,0 +1,76 @@
+:root {
+    --background: #222121;
+    --text: #0b7200;
+    --link: #01c0ce;
+    --aboutMeText: #fff;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+header nav {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    flex-wrap: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+h2 {
+    font-size: 175%;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("aboutMeImage.jpg");
+    height: auto;
+    padding: 2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--aboutMeText);
+}
+
+.introCard {
+    width: 48%;
+    text-align: center;
+}
+
+#headshot img {
+    height: 300px;
+    transition: all 0.5s ease-in;
+}
+
+#headshot figcaption {
+    position: relative;
+    bottom: 20px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+#headshot img:hover {
+    box-shadow: 5px 5px 10px #aaaaaa;
+}
+
+#headshot img:hover + figcaption {
+    opacity: 1;
+}
