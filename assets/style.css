@@ -157,6 +157,21 @@ footer nav {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-top: 5px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    header nav a {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+
     #first img {
         height: 400px;
     }
