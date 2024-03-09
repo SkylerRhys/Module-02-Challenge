@@ -151,6 +151,10 @@ footer nav {
         flex-direction: column;
     }
 
+    .introCard {
+        width: 90%;
+    }
+
     .card {
         width: 48%;
     }
