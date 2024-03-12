@@ -1,3 +1,4 @@
+/* Setting various color variables */
 :root {
     --background: #222121;
     --text: #0b7200;
@@ -10,8 +11,10 @@
 body {
     background-color: var(--background);
     color: var(--text);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Set the header as flex so that the h1 displays next to the nav in a responsive style */
 header {
     display: flex;
     justify-content: space-between;
@@ -36,15 +39,18 @@ header nav a {
     margin-right: 15px;
 }
 
+/* Get rid of underlines under links */
 a {
     text-decoration: none;
     color: var(--link);
 }
 
+/* set links in the class "textLink" to transition slowly */
 .textLink {
     transition: all 0.5s ease-in;
 }
 
+/* have the background of links change on hover */
 .textLink:hover {
     background-color: var(--text);
 }
@@ -53,6 +59,8 @@ h2 {
     font-size: 175%;
 }
 
+/* Initiate flex to create a responsive about me section.
+Add a background hero image */
 #introduction {
     display: flex;
     flex-direction: row;
@@ -72,6 +80,10 @@ h2 {
     text-align: center;
 }
 
+#aboutMe p {
+    font-size: 20px;
+}
+
 #headshot img {
     height: 300px;
     opacity: 0.9;
@@ -83,6 +95,7 @@ h2 {
     opacity: 0;
 }
 
+/* Have the image and the figcaption hit full opacity on hover */
 #headshot img:hover {
     opacity: 1;
 }
@@ -124,10 +137,12 @@ h2 {
     opacity: 1;
 }
 
+/* overide the class of "card" to set a new width for the first card */
 #first {
     width: 100%;
 }
 
+/* move figcaption onto image */
 .card figcaption {
     position: relative;
     bottom: 40px;
@@ -147,6 +162,7 @@ footer nav {
     font-size: 20px;
 }
 
+/* add media queries for tablet */
 @media screen and (max-width: 992px) {
     #introduction {
         flex-direction: column;
@@ -161,6 +177,7 @@ footer nav {
     }
 }
 
+/* add media queries for phone */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
